@@ -21,5 +21,7 @@
       </div>
     </div>
   </div>
-  <div class="header_desc">{{ "Total user : " + count }}</div>
+  <div *ngIf="count$ | async as count" class="header_desc">
+    {{ "Total user : " + count }}
+  </div>
 </div>

@@ -1,67 +1,22 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, Subject } from 'rxjs';
+import { User } from '../models';
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
-  constructor() {}
-  getUserCount() {
-    return this.users.length;
+  constructor(private httpClient: HttpClient) {
+    this.totalUsers.next(0);
   }
-  users = [
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-1.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-2.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-3.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-1.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-2.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-3.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-1.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-2.jpg',
-      joiningDate: '2020-07-12',
-    },
-    {
-      name: 'Lorem Epsum',
-      designation: 'consectetur adipiscing',
-      photo: 'user-3.jpg',
-      joiningDate: '2020-07-12',
-    },
-  ];
+
+  totalUsers: Subject<number> = new Subject<number>();
+  getUsers(): Observable<User[]> {
+    let url =
+      'http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/users';
+    const headers = new HttpHeaders({
+      accept: 'text/plain',
+    });
+    return this.httpClient.get<any>(url, { headers: headers });
+  }
 }

@@ -13,6 +13,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [],
   exports: [
@@ -30,6 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatGridListModule,
     MatCardModule,
     FlexLayoutModule,
+    MatSelectModule,
+    MatTableModule,
   ],
 })
 export class MaterialModule {}

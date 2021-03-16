@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 import { UserService } from '../../service/user.service';
 
 @Component({
@@ -8,8 +9,8 @@ import { UserService } from '../../service/user.service';
 })
 export class HeaderComponent implements OnInit {
   constructor(private userService: UserService) {}
-  count = 0;
+  count$: Subject<number> = new Subject<number>();
   ngOnInit(): void {
-    this.count = this.userService.getUserCount();
+    this.count$ = this.userService.totalUsers;
   }
 }

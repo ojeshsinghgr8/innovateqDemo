@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../../models';
 import { UserService } from '../../service/user.service';
 
 @Component({
@@ -7,10 +8,13 @@ import { UserService } from '../../service/user.service';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  users: any;
+  users: User[] = [];
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    this.users = this.userService.users;
+    this.userService.getUsers().subscribe((val) => {
+      this.users = val;
+      this.userService.totalUsers.next(val.length);
+    });
   }
 }

@@ -7,6 +7,7 @@ import { HeaderComponent } from './view/header/header.component';
 import { CardsComponent } from './view/cards/cards.component';
 import { BlogsComponent } from './view/blogs/blogs.component';
 import { SharedModule } from '../shared/shared.module';
+import { HomeService } from './service/home.service';
 
 @NgModule({
   declarations: [
@@ -16,5 +17,6 @@ import { SharedModule } from '../shared/shared.module';
     BlogsComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
+  providers: [HomeService],
 })
 export class HomeModule {}

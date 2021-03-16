@@ -8,6 +8,7 @@ import { CardComponent } from './view/card/card.component';
 import { ListComponent } from './view/list/list.component';
 import { SharedModule } from '../shared/shared.module';
 import { UserService } from './service/user.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,12 @@ import { UserService } from './service/user.service';
     CardComponent,
     ListComponent,
   ],
-  imports: [CommonModule, UserManagmentRoutingModule, SharedModule],
+  imports: [
+    CommonModule,
+    UserManagmentRoutingModule,
+    SharedModule,
+    FormsModule,
+  ],
   providers: [UserService],
 })
 export class UserManagmentModule {}

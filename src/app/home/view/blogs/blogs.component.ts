@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Blog } from '../../models';
+import { HomeService } from '../../service/home.service';
 
 @Component({
   selector: 'home-blogs',
@@ -6,32 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blogs.component.scss'],
 })
 export class BlogsComponent implements OnInit {
-  constructor() {}
-  blogs = [
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      venenatis, ligula in feugiat rutrum, lacus tellus tincidunt tortor`,
-      image: 'oilfield-1.jpg',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      venenatis, ligula in feugiat rutrum, lacus tellus tincidunt tortor`,
-      image: 'oilfield-2.jpeg',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      venenatis, ligula in feugiat rutrum, lacus tellus tincidunt tortor`,
-      image: 'oilfield-3.jpg',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      venenatis, ligula in feugiat rutrum, lacus tellus tincidunt tortor`,
-      image: 'oilfield-1.jpg',
-    },
-  ];
-  ngOnInit(): void {}
+  constructor(private homeService: HomeService) {}
+  blogs: Blog[] = [];
+  ngOnInit(): void {
+    this.homeService.getBlogs().subscribe((val) => {
+      this.blogs = val;
+    });
+  }
 }
