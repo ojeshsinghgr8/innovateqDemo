@@ -39,6 +39,10 @@ Its an single page application in Angular,Material Design and Sass. API is mocke
 
 ## Setup
 
+Run `npm install` for installing all npm modules
+
+## Run application
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Build
