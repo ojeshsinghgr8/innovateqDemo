@@ -20,5 +20,84 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  venenatis, ligula in feugiat rutrum, lacus tellus tincidunt tortor",
       "image": "oilfield-1.jpg"
     }
+  ],
+  "cardData": {
+    "orders": {
+      "title": "Total Orders",
+      "value": 345,
+      "icon": "shopping_cart"
+    },
+    "expenses": {
+      "title": "Total Expenses",
+      "value": 267,
+      "icon": "account_balance_wallet"
+    },
+
+    "revenue": {
+      "title": "Total Revenue",
+      "value": 267,
+      "icon": "assessment"
+    },
+    "users": {
+      "title": "Total Users",
+      "value": 267,
+      "icon": "person"
+    }
+  },
+  "users": [
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-1.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-2.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-3.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-1.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-2.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-3jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-1.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-2.jpg",
+      "joiningDate": "2020-07-12"
+    },
+    {
+      "name": "Lorem Epsum",
+      "designation": "consectetur adipiscing",
+      "photo": "user-3.jpg",
+      "joiningDate": "2020-07-12"
+    }
   ]
 }
