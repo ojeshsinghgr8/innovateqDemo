@@ -1,0 +1,48 @@
+.blogs {
+  margin-top: 10px;
+  background: white;
+  border-radius: 5px;
+  color: var(--text-color);
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+  .heading {
+    padding: 4px 4px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  mat-icon {
+    font-size: 17px;
+  }
+  .blog-container {
+    padding: 10px 0px;
+    border-top: 1px solid lightgray;
+    font-size: 12px;
+    .blog-card {
+      width: 100%;
+      background: lightgray;
+      margin: 10px;
+    }
+  }
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.content {
+  padding: 16px;
+  border-top: 1px solid lightgray;
+  mat-card {
+    width: 200px;
+  }
+  .card-image {
+    width: 120px;
+    height: 80px;
+    border-radius: 6px;
+  }
+  .card-header {
+    margin: 0px !important;
+  }
+}
