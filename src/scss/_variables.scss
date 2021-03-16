@@ -1,0 +1,16 @@
+@import "custom";
+//Here we importing _custom.scss file but we don't need to include underscore.
+// $primary: #47a1f6;
+// $primary-hover: #187de4;
+// $primary-light: #e1f0ff;
+// $primary-inverse: #ffffff;
+// $bg-color: #f0f5fb;
+// $text-color:#668094;
+$theme: mat-light-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+
+:root {
+  --base-color: #47a1f6;
+  --bg-color: #f0f5fb;
+  --text-color: #668094;
+}

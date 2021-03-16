@@ -1,0 +1,29 @@
+<mat-sidenav-container class="menu-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+      <div class="menu_header">MENU</div>
+      <div class="link_container">
+        <a
+          mat-list-item
+          class="link"
+          [routerLink]="['/']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><mat-icon>widgets</mat-icon><span>Home</span></a
+        >
+        <a
+          mat-list-item
+          class="link"
+          [routerLink]="['/users']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><mat-icon>widgets</mat-icon><span>Users</span></a
+        >
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-container">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
