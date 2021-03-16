@@ -1,16 +1,24 @@
 <div class="users content">
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let item of users">
+    <div
+      fxFlex="25%"
+      fxFlex.md="50%"
+      fxFlex.xs="100%"
+      *ngFor="let item of users"
+    >
       <mat-card>
-        <div class="image_container">
-          <img
-            src="{{ 'assets/images/' + item?.photo }}"
-            alt="{{ item?.name }}"
-          />
+        <div class="image_container_main">
+          <div class="image_container">
+            <img
+              src="{{ 'assets/images/' + item?.photo }}"
+              alt="{{ item?.name }}"
+            />
+            <div class="send_button">
+              <mat-icon>send</mat-icon>
+            </div>
+          </div>
         </div>
-        <div class="send_button">
-          <mat-icon>send</mat-icon>
-        </div>
+
         <div class="card_content_container">
           <mat-card-header class="card-header">
             <mat-card-title>{{ item?.name }}</mat-card-title>
