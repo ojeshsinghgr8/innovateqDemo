@@ -46,49 +46,49 @@
   },
   "users": [
     {
-      "name": "Lorem Epsum",
+      "name": "Ojesh Singh",
       "designation": "consectetur adipiscing",
       "photo": "user-1.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Tom Jassy",
       "designation": "consectetur adipiscing",
       "photo": "user-2.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Lina Lauran",
       "designation": "consectetur adipiscing",
       "photo": "user-3.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Mohan Lal",
       "designation": "consectetur adipiscing",
       "photo": "user-1.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Big bull",
       "designation": "consectetur adipiscing",
       "photo": "user-2.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Sachin Tendulkar",
       "designation": "consectetur adipiscing",
-      "photo": "user-3jpg",
+      "photo": "user-3.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Mahinder Singh Dhoni",
       "designation": "consectetur adipiscing",
       "photo": "user-1.jpg",
       "joiningDate": "2020-07-12"
     },
     {
-      "name": "Lorem Epsum",
+      "name": "Virat Kohli",
       "designation": "consectetur adipiscing",
       "photo": "user-2.jpg",
       "joiningDate": "2020-07-12"
