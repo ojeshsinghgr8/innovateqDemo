@@ -33,9 +33,9 @@ Its an single page application in Angular,Material Design and Sass. API is mocke
 
 ## APIs
 
-blogs:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/blogs
-users:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/users
-Summary:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/CardData
+- blogs:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/blogs
+- users:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/users
+- Summary:http://my-json-server.typicode.com/ojeshsinghgr8/innovateqDemo/CardData
 
 ## Setup
 
