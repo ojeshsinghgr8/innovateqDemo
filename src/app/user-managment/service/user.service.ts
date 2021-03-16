@@ -2,6 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
 import { User } from '../models';
+/**
+ * Name: User Managemnt service
+ * Desc: Service serves user data from external API
+ * **/
 @Injectable({
   providedIn: 'root',
 })

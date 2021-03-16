@@ -9,7 +9,10 @@ import { ListComponent } from './view/list/list.component';
 import { SharedModule } from '../shared/shared.module';
 import { UserService } from './service/user.service';
 import { FormsModule } from '@angular/forms';
-
+/**
+ * Name: User Managemnt Module
+ * Desc: This module imports all the required modules required for User Management
+ * **/
 @NgModule({
   declarations: [
     MainContainerComponent,

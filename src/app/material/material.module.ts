@@ -15,6 +15,12 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+/**
+ * Name: Material Module
+ * Desc: This module handles all the imports required from Material design.
+ * And its included in Shared module which furter exports this module.
+ * Only shared module need to be included for any feature module
+ * **/
 @NgModule({
   declarations: [],
   exports: [

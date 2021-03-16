@@ -7,6 +7,10 @@ import { UserService } from '../../service/user.service';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
+/**
+ * Name: User card view
+ * Desc: This component shows card view for users
+ * */
 export class CardComponent implements OnInit {
   users: User[] = [];
   constructor(private userService: UserService) {}

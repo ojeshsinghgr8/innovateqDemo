@@ -7,6 +7,7 @@
         class="entry_select"
         [(ngModel)]="selectedEntries"
         name="entries"
+        (ngModelChange)="onChange($event)"
       >
         <option *ngFor="let entry of entries" [value]="entry.value">
           {{ entry.value }}
@@ -22,11 +23,13 @@
           id="site-search"
           name="q"
           placeholder="Search Entry"
+          (change)="search()"
+          [(ngModel)]="searchTerm"
           aria-label="Search through site content"
         />
       </div>
     </div>
-    <table mat-table [dataSource]="users">
+    <table mat-table [dataSource]="filteredData">
       <!--- Note that these columns can be defined in any order.
                   The actual rendered columns are set as a property on the row definition" -->
       <ng-container matColumnDef="photo">

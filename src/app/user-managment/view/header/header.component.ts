@@ -7,6 +7,10 @@ import { UserService } from '../../service/user.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
+/**
+ * Name: User module header
+ * Desc: This component shows the header for user module and Total number of users.
+ * */
 export class HeaderComponent implements OnInit {
   constructor(private userService: UserService) {}
   count$: Subject<number> = new Subject<number>();

@@ -6,7 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 // import 'hammerjs';
-
+/**
+ * Name: App Module
+ * Desc: This is the main module
+ * **/
 @NgModule({
   declarations: [AppComponent],
   imports: [
