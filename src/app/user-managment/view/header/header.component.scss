@@ -1,0 +1,53 @@
+.container {
+  background: white;
+  position: relative;
+  border-radius: 5px;
+  color: var(--text-color);
+  padding: 10px 0px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+  .heading {
+    padding: 4px 4px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  mat-icon {
+    font-size: 17px;
+  }
+  .header_desc {
+    background: var(--bg-color);
+    padding: 10px 30px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    font-size: 12px;
+  }
+  .view_switch {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 6px;
+    right: 13px;
+    .seperator {
+      border-right: 1px solid #cfc7c0;
+    }
+    .active {
+      color: var(--base-color);
+    }
+    div {
+      width: 48%;
+      height: 100%;
+      margin: 2px 0px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      cursor: pointer;
+
+      mat-icon {
+        font-size: 26px;
+      }
+    }
+  }
+}

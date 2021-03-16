@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="heading">
+    <mat-icon>widgets</mat-icon>
+    <span>Users</span>
+    <div class="view_switch">
+      <div
+        [routerLink]="['/users/list']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="seperator"
+      >
+        <mat-icon>view_list</mat-icon>
+      </div>
+      <div>
+        <mat-icon
+          [routerLink]="['/users/card']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >view_module</mat-icon
+        >
+      </div>
+    </div>
+  </div>
+  <div class="header_desc">{{ "Total user : " + count }}</div>
+</div>

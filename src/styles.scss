@@ -58,3 +58,34 @@ body {
     }
   }
 }
+
+.users {
+  .mat-card {
+    background: var(--bg-color);
+    box-shadow: none;
+    margin-top: 80px;
+    position: relative;
+    padding: 0px;
+  }
+  .card_content_container {
+    background: white;
+    height: 200px;
+    text-align: center !important;
+    border-radius: 8px;
+  }
+  .mat-card-content {
+    color: var(--text-color);
+  }
+  .mat-card-header-text {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+
+    .mat-card-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--base-color);
+    }
+  }
+}
