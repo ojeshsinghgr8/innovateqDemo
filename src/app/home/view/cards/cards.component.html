@@ -1,1 +1,38 @@
-<p>cards works!</p>
+<mat-grid-list class="card-container" cols="4" rowHeight="2:1">
+  <mat-grid-tile>
+    <div class="top-card first">
+      <div class="card-icon">
+        <mat-icon>{{ cardData["orders"]?.icon }}</mat-icon>
+      </div>
+      <div class="card-value">{{ cardData["orders"]?.value }}</div>
+      <div class="card-title">{{ cardData["orders"]?.title }}</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile
+    ><div class="top-card">
+      <div class="card-icon">
+        <mat-icon>{{ cardData["expenses"]?.icon }}</mat-icon>
+      </div>
+      <div class="card-value">{{ cardData["expenses"]?.value }}</div>
+      <div class="card-title">{{ cardData["expenses"]?.title }}</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile
+    ><div class="top-card">
+      <div class="card-icon">
+        <mat-icon>{{ cardData["revenue"]?.icon }}</mat-icon>
+      </div>
+      <div class="card-value">{{ cardData["revenue"]?.value }}</div>
+      <div class="card-title">{{ cardData["revenue"]?.title }}</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="top-card last">
+      <div class="card-icon">
+        <mat-icon>{{ cardData["users"]?.icon }}</mat-icon>
+      </div>
+      <div class="card-value">{{ cardData["users"]?.value }}</div>
+      <div class="card-title">{{ cardData["users"]?.title }}</div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

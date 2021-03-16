@@ -6,13 +6,15 @@ import { MainContainerComponent } from './container/main-container/main-containe
 import { HeaderComponent } from './view/header/header.component';
 import { CardsComponent } from './view/cards/cards.component';
 import { BlogsComponent } from './view/blogs/blogs.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [MainContainerComponent, HeaderComponent, CardsComponent, BlogsComponent],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+  declarations: [
+    MainContainerComponent,
+    HeaderComponent,
+    CardsComponent,
+    BlogsComponent,
+  ],
+  imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
-export class HomeModule { }
+export class HomeModule {}

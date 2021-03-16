@@ -10,6 +10,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 @NgModule({
   declarations: [],
   exports: [
@@ -24,6 +25,7 @@ import { MatListModule } from '@angular/material/list';
     MatMenuModule,
     MatBadgeModule,
     MatListModule,
+    MatGridListModule,
   ],
 })
 export class MaterialModule {}
